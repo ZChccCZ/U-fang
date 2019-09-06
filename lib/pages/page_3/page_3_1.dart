@@ -24,6 +24,10 @@ class _HxzsState extends State<Hxzs> {
     VRpage(),
   ];
 
+  List colorList=[
+    Colors.black,
+    Colors.red
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +44,7 @@ class _HxzsState extends State<Hxzs> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 FlatButton(
-                  child: Text("样板房",style: TextStyle(fontSize: 15),),
+                  child: Text("样板房",style: TextStyle(fontSize: 15,color: colorList[_currentIndex==0?1:0],fontFamily: "Rock Salt"),),
                   onPressed: (){
                     setState(() {
                       _currentIndex=0;
@@ -49,7 +53,7 @@ class _HxzsState extends State<Hxzs> {
                 ),
                 SizedBox(width: 20,),
                 FlatButton(
-                  child: Text("平面图",style: TextStyle(fontSize: 15),),
+                  child: Text("平面图",style: TextStyle(fontSize: 15,color: colorList[_currentIndex==1?1:0],fontFamily: "Rock Salt"),),
                   onPressed: (){
                     setState(() {
                       _currentIndex=1;
@@ -58,7 +62,7 @@ class _HxzsState extends State<Hxzs> {
                 ),
                 SizedBox(width: 20,),
                 FlatButton(
-                  child: Text("全景展示",style: TextStyle(fontSize: 15),),
+                  child: Text("全景展示",style: TextStyle(fontSize: 15,color: colorList[_currentIndex==2?1:0],fontFamily: "Rock Salt"),),
                   onPressed: (){
                     setState(() {
                       _currentIndex=2;

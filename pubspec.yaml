@@ -46,7 +46,20 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
+  #使用依赖包中的字体
+#  fonts:
+#    - family: Rock Salt
+#      fonts:
+#        # https://fonts.google.com/specimen/Rock+Salt
+#        - asset: fonts/RockSalt-Regular.ttf
+#    - family: VT323
+#      fonts:
+#        # https://fonts.google.com/specimen/VT323
+#        - asset: fonts/VT323-Regular.ttf
+#    - family: Ewert
+#      fonts:
+#        # https://fonts.google.com/specimen/Ewert
+#        - asset: fonts/Ewert-Regular.ttf
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg

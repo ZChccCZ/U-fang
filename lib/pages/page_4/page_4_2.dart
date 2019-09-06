@@ -94,6 +94,7 @@ class _YlmjState extends State<Ylmj> {
               },
             ),
           ),
+          Divider(),
         ],
       ),
     );
@@ -106,7 +107,7 @@ class _YlmjState extends State<Ylmj> {
           width: screamWidth,
           child: imageList[i],//Image.network(url[i]==null?"":url[i])
         ),
-        Text(pecture_description[i]==null?"":pecture_description[i])
+        Text(pecture_description[i]==null?"":pecture_description[i]),
       ],
     );
   }

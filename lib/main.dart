@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
       routes: routes,
+      debugShowCheckedModeBanner: false,
 //initialRoute: '/page_2',
 //      onGenerateRoute: onGenerateRoute,//用来处理传值切换的方法
     );

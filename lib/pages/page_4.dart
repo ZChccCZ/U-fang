@@ -17,6 +17,10 @@ class _Page_4State extends State<Page_4> {
     Zbss(),
     Ylmj(),
   ];
+  List colorList=[
+    Colors.black,
+    Colors.red
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,16 +34,18 @@ class _Page_4State extends State<Page_4> {
                 this._currentIndex=0;
               });
             },
-            child: Text("周边设施",style: TextStyle(fontSize: 15),),
+            child: Text("周边设施",style: TextStyle(fontSize: 15,color: colorList[_currentIndex==0?1:0]),),
           ),
-          SizedBox(width: 25,),
+          SizedBox(width: 12.5,),
+          Text("|"),
+          SizedBox(width: 12.5,),
           FlatButton(
             onPressed: (){
               setState(() {
                 this._currentIndex=1;
               });
             },
-            child: Text("园林美景",style: TextStyle(fontSize: 15),),
+            child: Text("园林美景",style: TextStyle(fontSize: 15,color: colorList[_currentIndex==1?1:0]),),
           ),
         ],
       ),

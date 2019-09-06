@@ -22,11 +22,13 @@ class _ZbssState extends State<Zbss> {
                 doubleTapStillScale: true,
                 child: new Image(
                   image: new NetworkImage(
-                      'http://a1.qpic.cn/psb?/V10CHacp1oVh3G/oM76ewcvZWGMhpsaznGsnOeHuki133BkD.*cZU2kcUM!/b/dDQBAAAAAAAA&ek=1&kp=1&pt=0&bo=HQtABh0LQAYROQ4!&tl=1&vuin=2508035263&tm=1565953200&sce=60-2-2&rf=viewer_4'),
+                      'http://a1.qpic.cn/psb?/V10CHacp1oVh3G/oM76ewcvZWGMhpsaznGsnOeHuki133BkD.*cZU2kcUM!/b/dDQBAAAAAAAA&ek=1&kp=1&pt=0&bo=HQtABh0LQAYROQ4!&tl=1&vuin=2508035263&tm=1565953200&sce=60-2-2&rf=viewer_4',
+                  ),
                 ),
               ),
             ),
-          )
+          ),
+          Divider(),
         ],
       ),
     );
